@@ -13,7 +13,7 @@ public class BinaryTreeSerialize {
     public static String serialize(TreeNode root) {
         List<Integer> res = new ArrayList<>();
 
-        Queue<TreeNode> queue = new LinkedList<>() {{
+        Queue<TreeNode> queue = new LinkedList<TreeNode>() {{
             offer(root);
         }};
 
@@ -46,7 +46,7 @@ public class BinaryTreeSerialize {
     public static String serialize(Node root) {
         List<Integer> res = new ArrayList<>();
 
-        Queue<Node> queue = new LinkedList<>() {{
+        Queue<Node> queue = new LinkedList<Node>() {{
             offer(root);
         }};
 
@@ -70,7 +70,7 @@ public class BinaryTreeSerialize {
     public static String nextNodeSerialize(Node root) {
         List<String> res = new ArrayList<>();
 
-        Queue<Node> queue = new LinkedList<>() {{
+        Queue<Node> queue = new LinkedList<Node>() {{
             offer(root);
         }};
 

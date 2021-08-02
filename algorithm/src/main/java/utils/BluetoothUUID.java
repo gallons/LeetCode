@@ -11,7 +11,7 @@ public class BluetoothUUID {
 
     private static final int BASE_START = 0, BASE_END = 8;
 
-    private static final Map<Integer, Character> i2c = new HashMap<>() {{
+    private static final Map<Integer, Character> i2c = new HashMap<Integer, Character>() {{
         put(10, 'a');
         put(11, 'b');
         put(12, 'c');
@@ -19,7 +19,7 @@ public class BluetoothUUID {
         put(14, 'e');
     }};
 
-    private static final Map<Character, Integer> c2i = new HashMap<>() {{
+    private static final Map<Character, Integer> c2i = new HashMap<Character, Integer> () {{
         put('a', 10);
         put('b', 11);
         put('c', 12);
